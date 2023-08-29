@@ -38,4 +38,12 @@ public class Biblioteca {
         return null;
     }
 
+    public void prestar(Libro libro){
+        libro.prestar();
+    }
+
+    public void devolver(Libro libro){
+        libro.devolver();
+    }
+
 }

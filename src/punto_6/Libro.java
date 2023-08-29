@@ -5,8 +5,8 @@ public class Libro {
     private String autor;
     private String titulo;
     private int cantPaginas;
-    private int cantEjemplares;
-    private int cantEjemplaresPrestados = 0;
+    private int cantEjemplares; // Si existe clase Ejemplar, pasar ahi
+    private int cantEjemplaresPrestados = 0; // Si existe clase Ejemplar, pasar ahi
 
     public void setAutor(String autor) {
         this.autor = autor;
@@ -75,6 +75,6 @@ public class Libro {
         if(cantEjemplaresPrestados < cantEjemplares){
             cantEjemplaresPrestados++;
 
-        }else throw new IllegalStateException("No hay ejemplares para prestar. Solo se prestaron " + cantEjemplaresPrestados + " ejemplares");
+        }else throw new IllegalStateException("No hay ejemplares para prestar. Se prestaron " + cantEjemplaresPrestados + " ejemplares");
     }
 }
