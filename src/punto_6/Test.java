@@ -44,9 +44,9 @@ public class Test {
 
         libro2.prestar();
 
-        System.out.println("Libro 1 " + libro1.getDescripcion());
+        System.out.println("Libro 1: " + libro1.getDescripcion());
         System.out.println(" ");
-        System.out.println("Libro 1 " + libro2.getDescripcion());
+        System.out.println("Libro 2:  " + libro2.getDescripcion());
 
         System.out.println(" ");
 
